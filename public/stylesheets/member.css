@@ -1,0 +1,78 @@
+table {
+    text-align: left;
+    width: 30%;
+}
+
+table.results-list td {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    color: #666666;
+    padding: 10px;
+    vertical-align: top;
+}
+
+table.results-list tbody tr .header {
+    background: none repeat scroll 0 0 #f6f6f6;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    padding-right: 20px;
+    white-space: normal;
+}
+
+table.results-list {
+    border-collapse: collapse;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: normal;
+}
+
+h1, h2, h3, h4, input {
+    font-family: 'runda', Helvetica, Arial, Sans-Serif;
+    font-weight: normal;
+}
+
+body {
+    font-family: Helvetica, Arial, Sans-Serif
+}
+
+label {
+    display: none;
+}
+
+.info {
+    display: none;
+}
+
+input[type="text"] {
+    border-radius: 3px;
+    cursor: text;
+    margin-right: 5px;
+    padding: 3px 10px;
+}
+
+input {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    padding: 3px;
+    font-size: 12px;
+    margin: -40px;
+}
+
+.button {
+    background: linear-gradient(to bottom, #00aef0 0%, #00a1de 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #26baf2;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 6px 22px;
+    text-decoration: none;
+}

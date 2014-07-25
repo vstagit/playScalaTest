@@ -1,0 +1,30 @@
+@(members: List[Member], inputForm: Form[(String, String)])
+@import helper._
+@main(title = "Member list") {
+<h3>@members.size members</h3>
+
+<table class="results-list">
+    <tr>
+        <td class="header">NAME</td>
+        <td class="header">EMAIL</td>
+    </tr>
+    @members.map { member =>
+    <tr>
+        <td>@member.name</td>
+        <td>@member.email</td>
+    </tr>
+    }
+</table>
+
+<h3>Add/Remove a member</h3>
+
+@form(routes.Application.memberAction) {
+
+@inputText(inputForm("name"), args = 'size -> 40, 'placeholder -> "Name")
+@inputText(inputForm("email"), args = 'size -> 40, 'placeholder -> "Email")
+
+<input type="submit" name="member" value="Add" class="button">
+<input type="submit" name="member" value="Remove" class="button">
+
+}
+}
