@@ -1,7 +1,7 @@
 @(members: List[Member], inputForm: Form[(String, String)])
 @import helper._
 @main(title = "Member list") {
-<h3>@members.size members</h3>
+        <h1>Member service</h1>
 
 <table class="results-list">
     <tr>
@@ -15,6 +15,7 @@
     </tr>
     }
 </table>
+<h3>Total members: @members.size members</h3>
 
 <h3>Add/Remove a member</h3>
 
